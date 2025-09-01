@@ -7,7 +7,6 @@ exports.CreatePostPage = function (req, res, next) {
         user: req.user,
     });
 };
-
 exports.CreatePost = async function (req, res, next) {
     try {
         const newPost = new PostCollection(req.body);
