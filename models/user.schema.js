@@ -19,7 +19,6 @@ const userSchema = new mongoose.Schema(
     },
     { timestamps: true }
 );
-
 userSchema.plugin(plm);
 
 const UserCollection = mongoose.model("user", userSchema);
