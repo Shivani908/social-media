@@ -7,6 +7,7 @@ const {
     PostLike,
 } = require("../controllers/post.controller");
 
+
 /**
  * @route GET /post/create
  * @desc Render create post page
