@@ -45,6 +45,7 @@ router.get("/verify-otp/:id", (req, res) => {
         title: "Verify OTP  | SocialMedia",
         user: req.user,
         id: req.params.id,
+        
     });
 });
 
