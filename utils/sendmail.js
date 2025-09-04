@@ -25,7 +25,6 @@ exports.sendMail = async (req, res, user) => {
     transport.sendMail(mailOptions, async (err, info) => {
         if (err) return res.send(err);
         console.log(info);
-
         user.otp = OTP;
         await user.save();
 
